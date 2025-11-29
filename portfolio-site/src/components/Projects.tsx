@@ -26,7 +26,7 @@ const Projects = () => {
     {
       title: 'Podcast',
       description:
-        'MemoryLane_Personal is a full-stack multimedia timeline web application designed to help users preserve, organize, and relive their most cherished memories. The core idea is to provide a private, secure, and beautifully designed digital space where users can upload photos, videos, voice notes, and tag them by date, album, location, and event milestones.',
+        'A podcast platform designed for users, creators, and admins, providing seamless audio streaming, community engagement, and powerful creator tools. With the growing popularity of podcasts, PodHub offers audio uploads, subscriptions, loyalty rewards, and analytics, making it easier for creators to share content and for users to enjoy and interact with it.',
       video: `${podcast}`,      
       techStack: ['HTML','CSS','Java Script','DOM','Firebase'],
       liveUrl: 'https://podcasthub7.netlify.app/',
