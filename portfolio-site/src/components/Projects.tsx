@@ -20,7 +20,7 @@ const Projects = () => {
         'PropFinder is a streamlined real estate search app that lets users easily explore, filter, and view property listings. It offers quick search tools, detailed property information, and an intuitive interface to simplify the home-finding process for buyers and renters.',
       video: `${propfinder}`,
       techStack: ['React','HTML','CSS','Firebase',"JavaScript"],
-      liveUrl: 'https://property-listing-platform-propfinder.netlify.app/signin',
+      liveUrl: 'https://property-listing-platform-propfinder.netlify.app',
       githubUrl: 'https://github.com/praveena415/propFinder',
     },
     {
