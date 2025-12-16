@@ -61,23 +61,46 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
-              <a
-                href={`${Praveena_Chintha_resume}`}
-                download
-                className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-saffron-500 to-saffron-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
-              >
-                <Download size={20} className="group-hover:animate-bounce" />
-                Download Resume
-              </a>
-              <button
-                onClick={scrollToContact}
-                className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-white dark:bg-gray-800 text-saffron-600 dark:text-saffron-400 font-semibold rounded-full shadow-lg border-2 border-saffron-500 hover:bg-saffron-50 dark:hover:bg-gray-700 hover:shadow-xl hover:scale-105 transition-all duration-300"
-              >
-                <Mail size={20} className="group-hover:animate-bounce" />
-                Contact Info
-              </button>
-            </div>
+           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+ 
+  <a
+    href={Praveena_Chintha_resume}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="group inline-flex items-center justify-center gap-2 px-8 py-4 
+               bg-white dark:bg-gray-800 text-saffron-600 dark:text-saffron-400 
+               font-semibold rounded-full shadow-lg border-2 border-saffron-500 
+               hover:bg-saffron-50 dark:hover:bg-gray-700 
+               hover:shadow-xl hover:scale-105 transition-all duration-300"
+  >
+    <Download size={20} className="group-hover:animate-bounce" />
+    View Resume
+  </a>
+  <a
+    href={Praveena_Chintha_resume}
+    download
+    className="group inline-flex items-center justify-center gap-2 px-8 py-4 
+               bg-gradient-to-r from-saffron-500 to-saffron-600 text-white 
+               font-semibold rounded-full shadow-lg 
+               hover:shadow-xl hover:scale-105 transition-all duration-300"
+  >
+    <Download size={20} className="group-hover:animate-bounce" />
+    Download Resume
+  </a>
+
+  <button
+    onClick={scrollToContact}
+    className="group inline-flex items-center justify-center gap-2 px-8 py-4 
+               bg-white dark:bg-gray-800 text-saffron-600 dark:text-saffron-400 
+               font-semibold rounded-full shadow-lg border-2 border-saffron-500 
+               hover:bg-saffron-50 dark:hover:bg-gray-700 
+               hover:shadow-xl hover:scale-105 transition-all duration-300"
+  >
+    <Mail size={20} className="group-hover:animate-bounce" />
+    Contact Info
+  </button>
+</div>
+
 
             <div className="flex gap-6 justify-center lg:justify-start pt-4">
               <a
