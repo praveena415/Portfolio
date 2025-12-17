@@ -37,7 +37,7 @@ const Home = () => {
     >
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          {/* Profile Image */}
+  
           <div className="flex justify-center lg:justify-end animate-fade-in">
             <div className="relative lg:-translate-x-8">
               <div className="absolute inset-0 bg-gradient-to-r from-saffron-400 to-green-400 rounded-full blur-2xl opacity-30 animate-pulse" />
@@ -51,7 +51,6 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Text Content */}
           <div className="text-center lg:text-left space-y-6 animate-slide-up">
             <div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white">
@@ -65,9 +64,8 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Resume & Contact Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
-              {/* View Resume */}
+            
               <a
                 href={Praveena_Chintha_resume}
                 target="_blank"
@@ -82,7 +80,6 @@ const Home = () => {
                 View Resume
               </a>
 
-              {/* Download Resume */}
               <a
                 href={Praveena_Chintha_resume}
                 download="Praveena_Chintha_Resume.pdf"
@@ -95,7 +92,6 @@ const Home = () => {
                 Download Resume
               </a>
 
-              {/* Contact */}
               <button
                 onClick={scrollToContact}
                 className="group inline-flex items-center justify-center gap-2 px-8 py-4
@@ -109,7 +105,6 @@ const Home = () => {
               </button>
             </div>
 
-            {/* Social Links */}
             <div className="flex gap-6 justify-center lg:justify-start pt-4">
               <a
                 href={import.meta.env.VITE_LINKEDIN_URL}
