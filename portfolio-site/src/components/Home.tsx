@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Download, Mail, Linkedin, Github, Code2 } from "lucide-react";
 import My_Profile from "../utils/My_Profile.jpg";
@@ -28,6 +27,16 @@ const Home = () => {
     element?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const handleResumeClick = () => {    
+    window.open(Praveena_Chintha_resume, "_blank", "noopener,noreferrer");
+    const link = document.createElement("a");
+    link.href = Praveena_Chintha_resume;
+    link.download = "Praveena_Chintha_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section
       id="home"
@@ -37,7 +46,6 @@ const Home = () => {
     >
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-  
           <div className="flex justify-center lg:justify-end animate-fade-in">
             <div className="relative lg:-translate-x-8">
               <div className="absolute inset-0 bg-gradient-to-r from-saffron-400 to-green-400 rounded-full blur-2xl opacity-30 animate-pulse" />
@@ -65,40 +73,24 @@ const Home = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
-            
-              <a
-                href={Praveena_Chintha_resume}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={handleResumeClick}
                 className="group inline-flex items-center justify-center gap-2 px-8 py-4
-                bg-white dark:bg-gray-800 text-saffron-600 dark:text-saffron-400
-                font-semibold rounded-full shadow-lg border-2 border-saffron-500
-                hover:bg-saffron-50 dark:hover:bg-gray-700
-                hover:shadow-xl hover:scale-105 transition-all duration-300"
+                    bg-gradient-to-r from-saffron-500 to-saffron-600 text-white
+                    font-semibold rounded-full shadow-lg
+                    hover:shadow-xl hover:scale-105 transition-all duration-300"
               >
                 <Download size={20} className="group-hover:animate-bounce" />
-                View Resume
-              </a>
-
-              <a
-                href={Praveena_Chintha_resume}
-                download="Praveena_Chintha_Resume.pdf"
-                className="group inline-flex items-center justify-center gap-2 px-8 py-4
-                bg-gradient-to-r from-saffron-500 to-saffron-600 text-white
-                font-semibold rounded-full shadow-lg
-                hover:shadow-xl hover:scale-105 transition-all duration-300"
-              >
-                <Download size={20} className="group-hover:animate-bounce" />
-                Download Resume
-              </a>
+                View & Download Resume
+              </button>
 
               <button
                 onClick={scrollToContact}
                 className="group inline-flex items-center justify-center gap-2 px-8 py-4
-                bg-white dark:bg-gray-800 text-saffron-600 dark:text-saffron-400
-                font-semibold rounded-full shadow-lg border-2 border-saffron-500
-                hover:bg-saffron-50 dark:hover:bg-gray-700
-                hover:shadow-xl hover:scale-105 transition-all duration-300"
+                    bg-white dark:bg-gray-800 text-saffron-600 dark:text-saffron-400
+                    font-semibold rounded-full shadow-lg border-2 border-saffron-500
+                    hover:bg-saffron-50 dark:hover:bg-gray-700
+                    hover:shadow-xl hover:scale-105 transition-all duration-300"
               >
                 <Mail size={20} className="group-hover:animate-bounce" />
                 Contact Info
